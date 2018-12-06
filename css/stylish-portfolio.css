@@ -809,8 +809,12 @@ section.success {
     display: flex; }
   .card {
     flex: 1 0 100%;
-	margin-top: 10px;	} }
+	margin-top: 30px;	} }
 
+@media (max-width: 577px) {
+.card {
+margin-top: 30px;	} }	
+	
 @media (max-width: 576px) {
   .lead {
   font-size: 1rem; }
