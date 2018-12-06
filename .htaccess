@@ -1,0 +1,11 @@
+
+ErrorDocument 401 index.html
+ErrorDocument 403 index.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 index.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} www.newwork.academy [NC]
+
+RewriteRule ^(.*)$ http://newwork.academy [L,R=301]
